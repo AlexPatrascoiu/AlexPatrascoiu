@@ -145,10 +145,10 @@ daca if nu este indeplinit se va executa codul dupa else.
 # permisiune = input('Are permisiune? DA/NU/NA ' )
 #
 #
-# if varsta == 18 and (ambii_parinti == 'DA' or permisiune == 'DA') :
+# if varsta >= 18 and (ambii_parinti == 'NU' or permisiune == 'NA') :
 #         print('Permite calatoria')
 #
-# elif varsta >18 and ambii_parinti == 'NU' and permisiune == 'NA' :
+# elif varsta <18 and ambii_parinti == 'DA' and permisiune == 'DA' :
 #     print('Permite calatoria')
 #
 # else :
