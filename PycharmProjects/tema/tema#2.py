@@ -137,4 +137,19 @@ daca if nu este indeplinit se va executa codul dupa else.
 # else :
 #     print('Triunghiul nu este valid')
 
+#16 Pentru exercitiile cu biletele de avion incercati sa aplicati tehnicile de equivalence partitioning si boundary value analysis astfel incat sa eficientizati testarea.
 
+
+# varsta = int(input('Va rog introduceti varsta :  '))
+# ambii_parinti = input('Are ambii parinti? DA/NU ')
+# permisiune = input('Are permisiune? DA/NU/NA ' )
+#
+#
+# if varsta == 18 and (ambii_parinti == 'DA' or permisiune == 'DA') :
+#         print('Permite calatoria')
+#
+# elif varsta >18 and ambii_parinti == 'NU' and permisiune == 'NA' :
+#     print('Permite calatoria')
+#
+# else :
+#     print('Nu permite calatoria')
