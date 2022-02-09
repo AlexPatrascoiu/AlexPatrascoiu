@@ -11,8 +11,11 @@ daca if nu este indeplinit se va executa codul dupa else.
 
 # x = 4
 # y = 1
-# print(x>0)
-#
+# if x>0 :
+#     print('X este numar pozitiv')
+# else :
+#     print('X este numar negativ')
+
 # #3 Verifica si afiseaza daca x este numar pozitiv, negativ sau neutru
 #
 # print(x > 0 and x < 0 and x==0)
@@ -27,7 +30,14 @@ daca if nu este indeplinit se va executa codul dupa else.
 
 #6Verifica daca x NU este intre 5 si 27. (a se folosi ‘not’)
 
-# print(not(x >= 5 or x == 27))  #am returnat o valoare opusa pentru valoarea lui x
+# x = 3
+#
+# if not (x >= 5 and x <= 27) :
+#     print('X NU este intre 5 si 27')
+# else :
+#     print('Numarul este in afara intervalului')
+
+
 
 #7Verifica si afiseaza daca sunt egale, daca nu afiseaza care din ele este mai mare
 
@@ -81,16 +91,12 @@ daca if nu este indeplinit se va executa codul dupa else.
 
 #11 Verifica daca x are minim 4 cifre
 
-# n=int(input("Enter number:"))
-# count=0
-# while(n>0):
-#     count=count+1
-#     n=n//10
-# if count < 4 :
-#     print('The number has less than 4 digits')
-# else :
-#     print("The number of digits in the number are:",count)
-
+# numar=int(input('Introduce your 4 digit code '))
+#
+# if numar > 999 or numar < 10000 :
+#      print(print('Numarul are cel putin 4 cifre'))
+# else:
+#      print(print('Numarul nu are cel putin 4 cifre'))
 #12 .Verifica daca x are exact 6 cifre
 
 # x=int(input('Introdu un numar: '))
@@ -112,7 +118,7 @@ daca if nu este indeplinit se va executa codul dupa else.
 #     print ("Numarul este impar")
 
 #14 Afiseaza care este cel mai mare dintre ele?
-#
+
 # x, y, z = input('Introduceti cele 3 numere').split( )
 # x = int(x)
 # y = int(y)
@@ -140,16 +146,20 @@ daca if nu este indeplinit se va executa codul dupa else.
 #16 Pentru exercitiile cu biletele de avion incercati sa aplicati tehnicile de equivalence partitioning si boundary value analysis astfel incat sa eficientizati testarea.
 
 
-# varsta = int(input('Va rog introduceti varsta :  '))
-# ambii_parinti = input('Are ambii parinti? DA/NU ')
-# permisiune = input('Are permisiune? DA/NU/NA ' )
-#
-#
-# if varsta >= 18 and (ambii_parinti == 'NU' or permisiune == 'NA') :
-#         print('Permite calatoria')
-#
-# elif varsta <18 and ambii_parinti == 'DA' and permisiune == 'DA' :
-#     print('Permite calatoria')
-#
-# else :
-#     print('Nu permite calatoria')
+# pasaport = input('Are pasaportul valid : DA/NU ')
+# age = int(input(" Introduceti varsta"))
+# if  pasaport == "DA":
+#      if age >=18:
+#            print('permite calatoria')
+#      elif age<18:
+#         ambii_parinti = input('Are ambii parinti? DA/NU ')
+#         if ambii_parinti == 'DA':
+#             print('Permite calatoria')
+#         else:
+#             permisiune = input('Are permisiune? DA/NU')
+#             if permisiune == 'DA':
+#                  print("permite calatoria")
+#             else:
+#                 print("Nu permite calatoria")
+# else:
+#     print('Nu permite calatoria');
