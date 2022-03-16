@@ -3,7 +3,7 @@
 
 #a Folositi un for ca sa iterati prin toata lista si sa afisati ‘Masina mea preferata este x’
 #
-# masini =['Audi','Volvo','BMW','Mercedes','Aston Martin','Lastun','Fiat','Trabant','Opel']
+masini =['Audi','Volvo','BMW','Mercedes','Aston Martin','Lastun','Fiat','Trabant','Opel']
 # length = len(masini)
 # for x in range(length):
 #    print(f'Masina mea preferata este: {masini[x]}')
@@ -50,7 +50,7 @@
 
 #5 Modernizati parcul de masini. Creati o lista goala, masini_vechi;Iterati prin masini
 
-
+#
 # masini_vechi = []
 # for i in range(len(masini)):
 #     if masini[i] == 'Lastun' or masini[i] =='Trabant':

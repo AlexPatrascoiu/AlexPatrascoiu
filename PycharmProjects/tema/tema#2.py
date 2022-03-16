@@ -16,12 +16,12 @@ daca if nu este indeplinit se va executa codul dupa else.
 # else :
 #     print('X este numar negativ')
 
-# #3 Verifica si afiseaza daca x este numar pozitiv, negativ sau neutru
-#
+#3 Verifica si afiseaza daca x este numar pozitiv, negativ sau neutru
+
 # print(x > 0 and x < 0 and x==0)
-#
-# #4 Verifica si afiseaza daca x este intre -2 si 13
-#
+
+#4 Verifica si afiseaza daca x este intre -2 si 13
+
 # print(x>=-2 or x<=13)
 
 #5Verifica si afiseaza daca diferenta dintre x si y este mai mica de 5
@@ -112,7 +112,7 @@ daca if nu este indeplinit se va executa codul dupa else.
 #13 Verifica daca x este numar par sau impar
 # x=int(input("introduceti o valoare :"))
 #
-# if x %2 == 0:
+# if x % 2 == 0:
 #         print ('Numarul este par')
 # else:
 #     print ("Numarul este impar")

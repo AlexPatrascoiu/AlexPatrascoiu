@@ -15,9 +15,9 @@
 #3 Avand 2 liste, [3, 1, 0, 2] si [6, 5, 4] Gasiti 2 variante sa le uniti intr-o singura lista. Afisati lista ordonata astfel [0,1,2,3,4,5,6]
 
 #varianta 1
-# list1 = [3,1,0,2]
-# list2 = [6,5,4]
-# list3 = list1 + list2                           #creez o lista noua.
+list1 = [3,1,0,2]
+list2 = [6,5,4]
+list3 = list1 + list2                           #creez o lista noua.
 # list3.sort()                                    #cu functia .sort am sortat noua lista
 # print(list3)                                    #afisez lista in ordine numerica
 # #varianta 2
@@ -75,17 +75,17 @@
 
 #12 Set zile_sapt = {'luni', 'marti', 'miercuri', 'joi', 'vineri', 'sambata', 'duminica'} weekend = {'sambata', 'duminica'}
 
-# zile_sapt = {'luni','marti','miercuri','joi','vineri','sambata','duminica'}
-# weekend = {'sambata','duminica'}
+zile_sapt = {'luni','marti','miercuri','joi','vineri','sambata','duminica'}
+weekend = {'sambata','duminica'}
 # zile_sapt.add('LUNI')
 # print(zile_sapt)
 
 #13 Folositi un if si verificati daca: Weekend este un subset al zilelor din sapt sau Weekend nu este un subset al zilelor din saptamana.
 
-# if  weekend.issubset(zile_sapt) :
-#     print('Weekendul este un subset al zilelor din sapt')
-# else :
-#     print('wekeendul nu este un subset al zilelor din sapt')
+if  weekend.issubset(zile_sapt) :
+    print('Weekendul este un subset al zilelor din sapt')
+else :
+    print('wekeendul nu este un subset al zilelor din sapt')
 
 
 #14 Afisati diferentele dintre aceste 2 seturi
@@ -94,7 +94,7 @@
 
 #15 Afisati intersectia elementelor din aceste 2 seturi
 
-# print(zile_sapt.intersection(weekend))                  #afisez zilele comune dintre 2 seturi
+print(zile_sapt.intersection(weekend))                  #afisez zilele comune dintre 2 seturi
 
 
 

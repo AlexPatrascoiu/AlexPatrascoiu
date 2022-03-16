@@ -60,9 +60,9 @@
 
 #8 Afiseaza stringul fara ultimele caractere
 
-my_string = 'Coral is either the stupidest animal or the smartest rock'
-# x=int(input('introduceti un numar: '))
-# #x=int(x) - se poate si asa fara int inainte de input
+# my_String = 'Coral is either the stupidest animal or the smartest rock'
+# # x=int(input('introduceti un numar: '))
+# x=int(3) # se poate si asa fara int inainte de input
 # print(my_String[:-x])
 
 #9 creaza un string nou folosing primele 5 + ultimele 5 caractere
