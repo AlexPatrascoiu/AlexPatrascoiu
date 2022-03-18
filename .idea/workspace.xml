@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b2c69f4-3262-4d6a-affd-18deba42ecd1" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/PycharmProjects/Curs#6.1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PycharmProjects/tema/mod_de_lucru_functii.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PycharmProjects/tema/Tema#6.1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PycharmProjects/Curs#6.py" beforeDir="false" afterPath="$PROJECT_DIR$/PycharmProjects/Curs#6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PycharmProjects/tema/Tema#1.py" beforeDir="false" afterPath="$PROJECT_DIR$/PycharmProjects/tema/Tema#1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PycharmProjects/tema/tema#2.py" beforeDir="false" afterPath="$PROJECT_DIR$/PycharmProjects/tema/tema#2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PycharmProjects/tema/tema#3.py" beforeDir="false" afterPath="$PROJECT_DIR$/PycharmProjects/tema/tema#3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PycharmProjects/tema/tema#4.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/PycharmProjects/tema/tema#4.1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +50,7 @@
       <recent name="C:\Users\apmor\Desktop\curs_automation\AlexPatrascoiu\PycharmProjects" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Curs#6.1">
+  <component name="RunManager" selected="Python.Tema#6.1">
     <configuration name="Curs#6.1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AlexPatrascoiu" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tema#2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Tema#6.1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AlexPatrascoiu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,7 +105,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PycharmProjects/tema/tema#2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PycharmProjects/tema/Tema#6.1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Tema#6.1" />
         <item itemvalue="Python.Curs#6.1" />
         <item itemvalue="Python.Tema#6" />
         <item itemvalue="Python.tema#4.1" />
         <item itemvalue="Python.tema#3" />
-        <item itemvalue="Python.tema#2" />
       </list>
     </recent_temporary>
   </component>
