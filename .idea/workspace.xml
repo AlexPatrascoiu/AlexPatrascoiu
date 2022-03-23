@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="7b2c69f4-3262-4d6a-affd-18deba42ecd1" name="Changes" comment="Curs6.1">
       <change afterPath="$PROJECT_DIR$/PycharmProjects/tema/Teama#6.1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PycharmProjects/Curs#6.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/PycharmProjects/Curs#6.1.py" afterDir="false" />
+=======
+    <list default="true" id="7b2c69f4-3262-4d6a-affd-18deba42ecd1" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/PycharmProjects/tema/Tema#6.1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 713447204c7bb55487d0e74026ca684c0296fc6c
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +57,11 @@
       <recent name="C:\Users\apmor\Desktop\curs_automation\AlexPatrascoiu\PycharmProjects" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.Teama#6.1">
+=======
+  <component name="RunManager" selected="Python.Tema#6.1">
+>>>>>>> 713447204c7bb55487d0e74026ca684c0296fc6c
     <configuration name="Curs#6.1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AlexPatrascoiu" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,7 +104,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="Tema#6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="Tema#6.1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+>>>>>>> 713447204c7bb55487d0e74026ca684c0296fc6c
       <module name="AlexPatrascoiu" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,7 +120,11 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PycharmProjects/tema/Tema#6.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PycharmProjects/tema/Tema#6.1.py" />
+>>>>>>> 713447204c7bb55487d0e74026ca684c0296fc6c
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,7 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python.Teama#6.1" />
+=======
+        <item itemvalue="Python.Tema#6.1" />
+>>>>>>> 713447204c7bb55487d0e74026ca684c0296fc6c
         <item itemvalue="Python.Curs#6.1" />
         <item itemvalue="Python.Tema#6" />
         <item itemvalue="Python.tema#4.1" />
