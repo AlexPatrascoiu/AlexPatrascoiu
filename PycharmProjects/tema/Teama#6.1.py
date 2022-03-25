@@ -66,7 +66,7 @@ from tabulate import tabulate
 #     nume= None
 #     prenume= None
 #     salariu=0
-#
+
 #     def __init__(self,nume,prenume,salariu):
 #         self.nume=nume
 #         self.prenume=prenume
