@@ -1,5 +1,7 @@
-#1Pentru toate clasele, creati cel putin 2 obiecte cu valori diferite si apelati toate metodele clasei
+from tabulate import tabulate
 
+# 1Pentru toate clasele, creati cel putin 2 obiecte cu valori diferite si apelati toate metodele clasei
+#
 #
 # class cerc:                                       #am creat clasa cerc
 #     raza = 0                                      #aici se vor defini atributele
@@ -28,9 +30,9 @@
 
 
 
-
-#2 Calculeaza aria dreptunghiului
-
+#
+# 2 Calculeaza aria dreptunghiului
+#
 # class Dreptunghi:
 #     lungime = 0
 #     latime = 0
@@ -54,12 +56,12 @@
 # drepunghi_obj=Dreptunghi(12, 15, 'Alb')                                #am creat un obiect la care am atribuit niste valori efective,
 # drepunghi_obj.arie_dreptunghi(12,5)
 # drepunghi_obj.culoare_dreptunghi('Verde')
+
+
+
+
+# 3
 #
-
-
-
-#3
-
 # class Angajat:
 #     nume= None
 #     prenume= None
@@ -92,8 +94,8 @@
 # angajat_obj.prenume='Alin'
 # print(angajat_obj.prenume)
 
-#4
-#
+4
+
 # from datetime import date                                             #am importat functia date
 # today = date.today()                                                  # se va afisa data de astazi.
 #
@@ -110,58 +112,67 @@
 #         self.cantitate=cantitate
 #         self.pret_buc=pret_buc
 #
-#     def numar_factura(self,numar):
 #
-#        print(f'Numarul facturii este: {numar}')
+#     def schimba_cantitatea(self,cantitate):
+#         self.cantitate=cantitate
+#         return self.cantitate
 #
-#     def numeProdus(self,nume_produs):
-#         print(f'Numele este: {nume_produs}')
+#     def schimba_pretul(self, pret):
+#         self.pret_buc=pret
+#         return self.pret_buc
 #
-#     def cantitate_produs(self,cantitate):
+#     def schimba_nume_produs(self, nume):
+#         self.nume_produs=nume
+#         return self.nume_produs
 #
-#         print(f'Cantitatea este: {cantitate}')
-#
-#     def pret(self,pret_buc):
-#         print(f'Pretul este: {pret_buc} RON')
-#
-#     def serie(self,seria):
-#         print(f'Seria este: {seria}')
+#     def genereaza_factura(self):
+#         total=self.pret_buc*self.cantitate
+#         print(f'Am generat factura la: {self.nume_produs} in cantitate de {self.cantitate} la un pret unitar de {self.pret_buc} avand un total de {total}')
 #
 #
-# factura_obj=Factura(1,'Factura Gaz',2,420)                    #am creat un obiect la care am atribuit valori efective clasei "factura"
-# factura_obj.numar_factura(2)
-# factura_obj.numeProdus('Factura Curent')
-# factura_obj.cantitate_produs(2)
-# factura_obj.pret(430)
-# factura_obj.serie('G12345')
 #
+#
+#
+# factura_obj=Factura(1,'Factura Gaz',6,300)                    #am creat un obiect la care am atribuit valori efective clasei "factura"
+# factura_obj.schimba_pretul(460)
+# cantitate_finala=factura_obj.schimba_cantitatea(2)
+# factura_obj.genereaza_factura()
+# print(cantitate_finala)
+# print(factura_obj.cantitate)
 # print('Data de astazi este: ', today)                             #am afisat data de astazi.
 
 
-#5
-#
-# class Cont:
-#     iban=0
-#     titular_cont=None
-#     sold=0
-#
-#     def __init__(self,iban,titular_cont,sold):
-#         self.iban=iban
-#         self.titular_cont=titular_cont
-#         self.sold=sold
-#
-#
-#     def cont_iban(self,iban):
-#         print(f'mai are in contul {iban}')
-#
-#     def titular(self,titular_cont):
-#         print(f'Titularul{titular_cont}')
-#
-#     def sold_cont(self,sold):
-#         print(f'suma {sold} Lei')
-#
-# cont_bancar=Cont(3560124256789015, 'Popescu Marin', 4020)
-# cont_bancar.titular('Mircea Florentin')
-# cont_bancar.cont_iban(3560124256789015)
-# cont_bancar.sold_cont(3760)
+# 5
 
+class Cont:
+    iban=0
+    titular_cont=None
+    sold=0
+
+    def __init__(self,iban,titular_cont,sold):
+        self.iban=iban
+        self.titular_cont=titular_cont
+        self.sold=sold
+
+
+    def cont_iban(self,iban):
+        print(f'mai are in contul {iban}')
+
+    def titular(self,titular_cont):
+        print(f'Titularul {titular_cont}')
+
+    def sold_cont(self,sold):
+        print(f'suma {sold} Lei')
+
+    def debitare_cont(self,suma_debitare):
+        self.sold=self.sold-suma_debitare
+        return self.sold
+
+    def creditare_cont(self,suma_creditata):
+        self.sold=self.sold+suma_creditata
+        return self.sold
+
+cont_bancar=Cont(3560124256789015, 'Popescu Marin', 4020)
+# print(cont_bancar.debitare_cont(32))
+# print(cont_bancar.creditare_cont(18))
+print(f'Titularul {cont_bancar.titular_cont} are in contul {cont_bancar.iban} suma de {cont_bancar.sold} Lei')
