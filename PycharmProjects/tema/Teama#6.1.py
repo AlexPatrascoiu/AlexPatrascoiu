@@ -30,7 +30,7 @@ from tabulate import tabulate
 
 
 
-#
+
 # 2 Calculeaza aria dreptunghiului
 #
 # class Dreptunghi:
@@ -61,7 +61,7 @@ from tabulate import tabulate
 
 
 # 3
-#
+
 # class Angajat:
 #     nume= None
 #     prenume= None
@@ -94,7 +94,7 @@ from tabulate import tabulate
 # angajat_obj.prenume='Alin'
 # print(angajat_obj.prenume)
 
-4
+#4
 
 # from datetime import date                                             #am importat functia date
 # today = date.today()                                                  # se va afisa data de astazi.
@@ -142,7 +142,7 @@ from tabulate import tabulate
 # print('Data de astazi este: ', today)                             #am afisat data de astazi.
 
 
-# 5
+#5
 
 class Cont:
     iban=0
