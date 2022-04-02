@@ -9,20 +9,7 @@ class Angajat(ABC):
     def testAlcool(self):
         raise NotImplementedError
 
-class AngajatSRI(Angajat):
-    __numeProiectAlpha = 'Cod Secret Vulturul'
 
-    def pontaj(self):
-        frecventaPontareLuna = 1
-        return frecventaPontareLuna
-
-    def testAlcool(self):
-        frecventaTestAlcool = 8
-        return frecventaTestAlcool
-
-    def ascultaTelefoane(self):
-        tipTepefoane = 'Smartphone'
-        return tipTepefoane
 
     @property
     def numeProiectAlpha(self):
@@ -42,6 +29,20 @@ class AngajatSRI(Angajat):
             print('numele nu este sigur')
             raise NameError('Numele nu este sigur')
 
+    class AngajatSRI(Angajat):
+        __numeProiectAlpha = 'Cod Secret Vulturul'
+
+        def pontaj(self):
+            frecventaPontareLuna = 1
+            return frecventaPontareLuna
+
+        def testAlcool(self):
+            frecventaTestAlcool = 8
+            return frecventaTestAlcool
+
+        def ascultaTelefoane(self):
+            tipTepefoane = 'Smartphone'
+            return tipTepefoane
     @numeProiectAlpha.deleter
     def numeProiectAlpha(self):
         self.__numeProiectAlpha = None
@@ -63,23 +64,23 @@ print(angajatSRI1.ascultaTelefoane())
 
 
 # super class
-class Student:
-    # protected data members
-    _name = None
-
-    # constructor
-    def __init__(self, name):
-        self._name = name
-
-
-# derived class
-class  ChildStudent(Student):
-    _classAttribute = "test"
-    # constructor
-    def __init__(self, name):
-        Student.__init__(self, name)
-
-    # public member function
-    def displayDetails(self):
-        # accessing protected data members of parent class
-        print("Name: ", self._name)
+# class Student:
+#     # protected data members
+#     _name = None
+#
+#     # constructor
+#     def __init__(self, name):
+#         self._name = name
+#
+#
+# # derived class
+# class  ChildStudent(Student):
+#     _classAttribute = "test"
+#     # constructor
+#     def __init__(self, name):
+#         Student.__init__(self, name)
+#
+#     # public member function
+#     def displayDetails(self):
+#         # accessing protected data members of parent class
+#         print("Name: ", self._name)
