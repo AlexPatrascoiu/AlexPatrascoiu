@@ -9,20 +9,7 @@ class Angajat(ABC):
     def testAlcool(self):
         raise NotImplementedError
 
-class AngajatSRI(Angajat):
-    __numeProiectAlpha = 'Cod Secret Vulturul'
 
-    def pontaj(self):
-        frecventaPontareLuna = 1
-        return frecventaPontareLuna
-
-    def testAlcool(self):
-        frecventaTestAlcool = 8
-        return frecventaTestAlcool
-
-    def ascultaTelefoane(self):
-        tipTepefoane = 'Smartphone'
-        return tipTepefoane
 
     @property
     def numeProiectAlpha(self):
@@ -42,6 +29,20 @@ class AngajatSRI(Angajat):
             print('numele nu este sigur')
             raise NameError('Numele nu este sigur')
 
+    class AngajatSRI(Angajat):
+        __numeProiectAlpha = 'Cod Secret Vulturul'
+
+        def pontaj(self):
+            frecventaPontareLuna = 1
+            return frecventaPontareLuna
+
+        def testAlcool(self):
+            frecventaTestAlcool = 8
+            return frecventaTestAlcool
+
+        def ascultaTelefoane(self):
+            tipTepefoane = 'Smartphone'
+            return tipTepefoane
     @numeProiectAlpha.deleter
     def numeProiectAlpha(self):
         self.__numeProiectAlpha = None
