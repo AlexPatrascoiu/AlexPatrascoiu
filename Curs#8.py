@@ -23,7 +23,7 @@ first_name.send_keys('Ala Bala Portocala')
 sleep(3)
 chrome.quit()
 
-avem nevoie sa importam cateva librarii gratuite care ne ajuta sa controlam chrome
+#avem nevoie sa importam cateva librarii gratuite care ne ajuta sa controlam chrome
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -74,9 +74,7 @@ sleep(3)
 chrome.quit()
 
 
-
 #IDENTIFICARE BY PARTIAL LINK TEXT
-
 
 
 # navigam catre un url
