@@ -7,7 +7,7 @@ RECAP
 # lista = [1,2,3,4]
 # lista.reverse()
 # print(lista)
-#
+
 
 #3.Avand 2 liste, [3, 1, 0, 2] si [6, 5, 4]
 #Gasiti 2 variante sa le uniti intr-o singura lista.

@@ -1,4 +1,4 @@
-#operatori de asignare
+#operator de asignare
 # x = 3 #asignare = stocarea unei valori la o anumita adresa de memorie
 # print(x)
 # x = x + 3 #creste valoarea lui x cu 3
