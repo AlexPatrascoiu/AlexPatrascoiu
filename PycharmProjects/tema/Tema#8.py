@@ -168,10 +168,10 @@ chrome = webdriver.Chrome(service = s)
 # # gasim mai multe si le punem in lista
 # lista_taguri = chrome.find_elements(By.TAG_NAME, 'input') # am definit o lista care sa stocheze toate elementele de pe site identificabile prin tag-ul de input
 # lista_taguri[1].send_keys('Test1')
-#
-#
+
+
 # sleep(3)
-#
+
 # chrome.quit()
 
 
