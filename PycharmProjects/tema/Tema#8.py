@@ -9,10 +9,11 @@ from selenium.webdriver.support.select import Select
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
-# # initializam chrome
-#s = Service(ChromeDriverManager().install())
-#chrome = webdriver.Chrome(service = s)
+# initializam chrome
+s = Service(ChromeDriverManager().install())
+chrome = webdriver.Chrome(service = s)
 
+#1
 # maximizam fereastra
 # chrome.maximize_window()
 #
@@ -26,11 +27,44 @@ from selenium.webdriver.common.by import By
 # sleep(5)
 # chrome.quit()
 
+#2
+# #maximizam fereastra
+# chrome.maximize_window()
+#
+# # navigam catre un url
+# chrome.get('http://automationpractice.com/index.php')
+#
+# # selectam dupa ID
+# search = chrome.find_element(By.ID, 'search_query_top')
+# search.send_keys('dress')
+# sleep(1)
+# buton_search = chrome.find_elements(By.CLASS_NAME, 'btn btn-default button-search')
+# buton_search.click()
+# sleep(5)
+# chrome.quit()
+
+#3
+
+#maximizam fereastra
+# chrome.maximize_window()
+#
+# # navigam catre un url
+# chrome.get('https://www.phptravels.net/')
+#
+# # selectam dupa ID
+# chrome.find_element(By.ID, 'languages').click()
+# sleep(1)
+# chrome.find_element(By.PARTIAL_LINK_TEXT, 'French').click()
+# sleep(5)
+# chrome.quit()
 
 
 
-#2 Selectors by Link text
 
+
+
+#2 Selectors by Partial Link text
+#1
 # #navigam catre un url
 # chrome.get('https://www.phptravels.net')
 #
@@ -42,15 +76,52 @@ from selenium.webdriver.common.by import By
 # sleep(3)
 # chrome.quit()
 
+#navigam catre un url
+# chrome.get('https://www.phptravels.net')
+#2
+# # selector by Partial Link Text
+# chrome.find_element(By.PARTIAL_LINK_TEXT, 'Log').click()
+# # chrome.find_element(By.LINK_TEXT, 'Login').click() # Acelasi lucru, varianta mai lunga
+# # chrome.find_element(By.CLASS_NAME, 'form-control').send_keys('alecs.patrascoiu@yahoo.ro')
+#
+# sleep(3)
+# chrome.quit()
+
+#3
+#navigam catre un url
+# chrome.get('https://www.phptravels.net')
+# # selector by Partial Link Text
+# chrome.find_element(By.PARTIAL_LINK_TEXT, 'Log').click()
+# sleep(2)
+# chrome.find_element(By.PARTIAL_LINK_TEXT, 'Sign').click()
+#
+#
+# sleep(3)
+# chrome.quit()
 
 
-#3 Selectors by Partial link text
 
+
+#3 Selectors by link text
+#1
+# #navigam catre un url
+# chrome.get('https://jules.app/sign-in')
+# sleep(3)
+# chrome.find_element(By.LINK_TEXT,'Forgot password?').click()
+# sleep(3)
+# chrome.quit()
+#2
 #navigam catre un url
 # chrome.get('https://jules.app/sign-in')
-# #chrome.find_element(By.PARTIAL_LINK_TEXT,'password').click()
+# sleep(3)
+# chrome.find_element(By.LINK_TEXT,'Sign up.').click()
+# sleep(3)
+# chrome.quit()
+#3
+#navigam catre un url
+# chrome.get('https://www.phptravels.net/')
 # sleep(2)
-# chrome.find_element(By.LINK_TEXT,'Forgot password?').click()
+# chrome.find_element(By.LINK_TEXT,'Tours').click()
 # sleep(3)
 # chrome.quit()
 
@@ -58,13 +129,14 @@ from selenium.webdriver.common.by import By
 
 #4 Selectors by Tag NAME
 
+#1
 # maximizam fereastra
 #chrome.maximize_window()
-#
-# navigam catre un url
-# chrome.get('https://www.phptravels.net')
-#
-# # selector by name
+
+#navigam catre un url
+#chrome.get('https://www.phptravels.net')
+
+# # selector by tag name
 # chrome.find_element(By.LINK_TEXT, 'Signup').click()
 #
 # sleep(2)
@@ -82,7 +154,25 @@ from selenium.webdriver.common.by import By
 # #chrome.find_element(By.ID, 'select2-account_type-result-5knr-agent').click()
 # sleep(3)
 # chrome.quit()
+
+#2
+
+#navigam catre un url
+# chrome.get('https://www.phptravels.net')
 #
+# # selector by Tag - ia primul tot tp. - e ok doar daca avem tag unic
+# chrome.find_element(By.TAG_NAME, 'input').send_keys('Test')
+#
+# sleep(3)
+#
+# # gasim mai multe si le punem in lista
+# lista_taguri = chrome.find_elements(By.TAG_NAME, 'input') # am definit o lista care sa stocheze toate elementele de pe site identificabile prin tag-ul de input
+# lista_taguri[1].send_keys('Test1')
+#
+#
+# sleep(3)
+#
+# chrome.quit()
 
 
 
@@ -122,3 +212,39 @@ from selenium.webdriver.remote.webelement import WebElement
 #
 # sleep(3)
 # chrome.quit()
+
+
+
+#1 Xpath- atribut valoare
+
+# maximizam fereastra
+# chrome.maximize_window()
+#
+# # Xpath -> recomandat - cel mai flexibil
+#
+# # navigam catre un url
+# chrome.get('https://formy-project.herokuapp.com')
+#
+# # # selector by Xpath - atribut=valoare
+# chrome.find_element(By.XPATH, '/html/body/div/div/li[1]/a').click()
+# sleep(2)
+#2 Xpath- atribut valoare
+# chrome.find_element(By.XPATH, '//*[@id="autocomplete"]').send_keys('Nowhere street, no 13')
+# sleep(2)
+# chrome.quit()
+
+#3 Xpath- atribut valoare
+
+# maximizam fereastra
+# chrome.maximize_window()
+#
+# # Xpath -> recomandat - cel mai flexibil
+#
+# # navigam catre un url
+# chrome.get('https://www.phptravels.net/')
+# sleep(3)
+# chrome.find_element(By.XPATH, '//*[@id="visa-tab"]/span[2]').click()
+# sleep(2)
+# chrome.quit()
+
+
