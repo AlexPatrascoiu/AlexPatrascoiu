@@ -131,12 +131,12 @@ chrome = webdriver.Chrome(service = s)
 
 #1
 # maximizam fereastra
-#chrome.maximize_window()
+# chrome.maximize_window()
+#
+# #navigam catre un url
+# chrome.get('https://www.phptravels.net')
 
-#navigam catre un url
-#chrome.get('https://www.phptravels.net')
-
-# # selector by tag name
+# selector by tag name
 # chrome.find_element(By.LINK_TEXT, 'Signup').click()
 #
 # sleep(2)
@@ -161,17 +161,19 @@ chrome = webdriver.Chrome(service = s)
 # chrome.get('https://www.phptravels.net')
 #
 # # selector by Tag - ia primul tot tp. - e ok doar daca avem tag unic
-# chrome.find_element(By.TAG_NAME, 'input').send_keys('Test')
+# #chrome.find_element(By.TAG_NAME, 'input').send_keys('Test')
 #
 # sleep(3)
 #
 # # gasim mai multe si le punem in lista
+# chrome.find_element(By.ID, 'select2-hotels_city-container').click()
 # lista_taguri = chrome.find_elements(By.TAG_NAME, 'input') # am definit o lista care sa stocheze toate elementele de pe site identificabile prin tag-ul de input
-# lista_taguri[1].send_keys('Test1')
-
-
+# print(len(lista_taguri))
+# for i in lista_taguri:
+#     print(lista_taguri.index(i))
+# sleep(1)
+# lista_taguri[24].send_keys('Italia')
 # sleep(3)
-
 # chrome.quit()
 
 
@@ -188,7 +190,7 @@ from selenium.webdriver.remote.webelement import WebElement
 # chrome.get('https://jules.app/sign-in')
 # sleep(6)
 # # selector by Class - ia primul tot tp. - e ok doar daca avem clasa unica
-# lista_elemente = chrome.find_elements(By.CLASS_NAME,'MuiFilledInput-input')
+# lista_elemente = chrome.find_elements(By.CLASS_NAME,'MuiInputBase-input')
 # lista_elemente[0].send_keys('alecs.patrascoiu@yahoo.ro')
 # lista_elemente[1].send_keys('parola')
 # sleep(3)
@@ -202,13 +204,11 @@ from selenium.webdriver.remote.webelement import WebElement
 # chrome.maximize_window()
 #
 # # # navigam catre un url
-# chrome.get('https://automationpractice.com/')
+# chrome.get('https://the-internet.herokuapp.com/')
 #
 # # selector by CSS - ID
-#
-# chrome.find_element(By.CSS_SELECTOR,'input[placeholder="Search"').send_keys('shoes')
 # sleep(1)
-# chrome.find_element(By.CSS_SELECTOR, 'button[submit').click()
+# chrome.find_element(By.LINK_TEXT, 'A/B Testing').click()
 #
 # sleep(3)
 # chrome.quit()
@@ -221,30 +221,28 @@ from selenium.webdriver.remote.webelement import WebElement
 # chrome.maximize_window()
 #
 # # Xpath -> recomandat - cel mai flexibil
-#
-# # navigam catre un url
+
+# navigam catre un url
 # chrome.get('https://formy-project.herokuapp.com')
 #
 # # # selector by Xpath - atribut=valoare
 # chrome.find_element(By.XPATH, '/html/body/div/div/li[1]/a').click()
 # sleep(2)
-#2 Xpath- atribut valoare
+# #2 Xpath- atribut valoare
 # chrome.find_element(By.XPATH, '//*[@id="autocomplete"]').send_keys('Nowhere street, no 13')
 # sleep(2)
 # chrome.quit()
 
 #3 Xpath- atribut valoare
 
-# maximizam fereastra
-# chrome.maximize_window()
-#
-# # Xpath -> recomandat - cel mai flexibil
-#
-# # navigam catre un url
-# chrome.get('https://www.phptravels.net/')
-# sleep(3)
-# chrome.find_element(By.XPATH, '//*[@id="visa-tab"]/span[2]').click()
-# sleep(2)
-# chrome.quit()
+#maximizam fereastra
+chrome.maximize_window()
+#Xpath -> recomandat - cel mai flexibil
+#navigam catre un url
+chrome.get('https://www.phptravels.net/')
+sleep(3)
+chrome.find_element(By.XPATH, '//*[@id="visa-tab"]/span[2]').click()
+sleep(2)
+chrome.quit()
 
 
